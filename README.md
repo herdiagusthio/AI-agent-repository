@@ -27,11 +27,11 @@ This repo currently includes the following agent prompts:
 
 - `universal-strategy-planning-agent.md`
 	- Lead Software Engineer – Planning & Strategy Agent. Transforms requirements/RFCs into a clear technical plan with risks, testing strategy, and ticket breakdowns.
-- `universal-AI-engineer-agent.md`
+- `universal-ai-engineer-agent.md`
 	- Senior AI Engineer Agent. Switches between reasoning and execution with a strict phased output structure.
-- `senior-golang-AI-engineer-agent.md`
+- `senior-golang-ai-engineer-agent.md`
 	- “GoSenior” — Senior Golang AI Engineer Agent. Enforces idiomatic Go, security, testing, CI practices, and a rigorous delivery format.
-- `golang-test-expert-AI-engineer-agent.md`
+- `golang-test-expert-ai-engineer-agent.md`
 	- “GoTestExpert” — Golang Testing Engineer Agent. Focuses on deterministic, idiomatic tests and ≥ 90% package coverage with enforcement guidance.
 
 ---
@@ -60,9 +60,9 @@ Tips for best results:
 | File | Role | Primary focus |
 |---|---|---|
 | `universal-strategy-planning-agent.md` | Lead Software Engineer – Planning & Strategy | Planning, technical design, risks, testing strategy, ticket breakdown |
-| `universal-AI-engineer-agent.md` | Senior AI Engineer | Reasoning → plan → implementation workflow, anti-hallucination guardrails |
-| `senior-golang-AI-engineer-agent.md` | “GoSenior” – Senior Golang Engineer | Idiomatic Go, secure/maintainable code, tests, ops, CI, delivery format |
-| `golang-test-expert-AI-engineer-agent.md` | “GoTestExpert” – Golang Testing Engineer | Deterministic tests, ≥90% coverage, patterns, coverage enforcement |
+| `universal-ai-engineer-agent.md` | Senior AI Engineer | Reasoning → plan → implementation workflow, anti-hallucination guardrails |
+| `senior-golang-ai-engineer-agent.md` | “GoSenior” – Senior Golang Engineer | Idiomatic Go, secure/maintainable code, tests, ops, CI, delivery format |
+| `golang-test-expert-ai-engineer-agent.md` | “GoTestExpert” – Golang Testing Engineer | Deterministic tests, ≥90% coverage, patterns, coverage enforcement |
 
 ---
 
@@ -73,8 +73,8 @@ Use descriptive, kebab-case file names:
 - `<domain-or-scope>-<role>-agent.md`
 - Examples:
 	- `universal-strategy-planning-agent.md`
-	- `senior-golang-AI-engineer-agent.md`
-	- `golang-test-expert-AI-engineer-agent.md`
+	- `senior-golang-ai-engineer-agent.md`
+	- `golang-test-expert-ai-engineer-agent.md`
 
 Prefer “universal-” for prompts that apply across stacks. Use stack or domain qualifiers (e.g., golang, frontend, data, security) for specialized agents.
 
@@ -120,6 +120,7 @@ You can add YAML front matter at the top of an agent file to track ownership and
 ---
 title: GoSenior – Senior Golang AI Engineer Agent
 slug: senior-golang-AI-engineer-agent
+slug: senior-golang-ai-engineer-agent
 version: 1.0.0
 owner: your-handle
 lastUpdated: 2025-09-28
@@ -136,8 +137,6 @@ This repository currently does not define a license. If you intend to allow reus
 - Code examples/snippets: consider MIT or Apache-2.0
 
 Add a `LICENSE` file to formalize the choice.
-
----
 
 ## FAQ
 
