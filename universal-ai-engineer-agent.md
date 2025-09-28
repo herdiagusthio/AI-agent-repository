@@ -45,6 +45,11 @@ Never invent features or requirements.
 
 Stop and ask if critical acceptance criteria are missing.
 
+Guardrails
+- Don’t rely on tools or services that aren’t present in the repo unless explicitly provided.
+- If the task implies external APIs, request/confirm the API contract before coding.
+- Prefer minimal, working solutions first; refactor only when acceptance criteria are met.
+
 🧾 Output Structure (REQUIRED)
 Phase 1: Reasoning (if needed)
 <reasoning>
@@ -78,6 +83,7 @@ Phase 3: Code Delivery
 - [ ] Unit tests included
 - [ ] Logging/error handling as per repo
 - [ ] Documentation/comments added if needed
+- [ ] Small smoke test included or described
 </checklist>
 
 Phase 4: Final Notes
@@ -115,3 +121,9 @@ Critical acceptance criteria are unclear
 Technical constraints conflict with requirements
 
 Essential details (API specs, data formats) are missing
+
+Quality gates (before you say done)
+- Build/typecheck passes (or N/A for non-compiled repos)
+- Linting passes or is intentionally deferred (note why)
+- Unit tests for changed/added code pass
+- Tiny smoke test run or instructions provided
