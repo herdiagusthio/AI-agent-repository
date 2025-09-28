@@ -11,6 +11,7 @@ Use these prompts as the “system” or “instruction” message for your chat
 - Repository contents
 - Quick start
 - Agent catalog
+- How to choose an agent
 - Naming conventions
 - Authoring guidelines
 - Contribution checklist
@@ -18,6 +19,8 @@ Use these prompts as the “system” or “instruction” message for your chat
 - License suggestions
 - FAQ
 - Changelog
+ - Cross-agent guardrails & quality gates
+ - New agent template
 
 ---
 
@@ -63,6 +66,15 @@ Tips for best results:
 | `universal-ai-engineer-agent.md` | Senior AI Engineer | Reasoning → plan → implementation workflow, anti-hallucination guardrails |
 | `senior-golang-ai-engineer-agent.md` | “GoSenior” – Senior Golang Engineer | Idiomatic Go, secure/maintainable code, tests, ops, CI, delivery format |
 | `golang-test-expert-ai-engineer-agent.md` | “GoTestExpert” – Golang Testing Engineer | Deterministic tests, ≥90% coverage, patterns, coverage enforcement |
+
+---
+
+## How to choose an agent
+
+- Planning a new feature or RFC with unknowns → use `universal-strategy-planning-agent.md`.
+- Need both reasoning and hands-on coding across stacks → use `universal-ai-engineer-agent.md`.
+- Building or reviewing Go services/libraries with strong delivery expectations → use `senior-golang-ai-engineer-agent.md`.
+- Raising test quality for Go repos and enforcing coverage ≥90% → use `golang-test-expert-ai-engineer-agent.md`.
 
 ---
 
@@ -119,7 +131,6 @@ You can add YAML front matter at the top of an agent file to track ownership and
 ```yaml
 ---
 title: GoSenior – Senior Golang AI Engineer Agent
-slug: senior-golang-AI-engineer-agent
 slug: senior-golang-ai-engineer-agent
 version: 1.0.0
 owner: your-handle
@@ -137,6 +148,52 @@ This repository currently does not define a license. If you intend to allow reus
 - Code examples/snippets: consider MIT or Apache-2.0
 
 Add a `LICENSE` file to formalize the choice.
+
+---
+
+## Cross-agent guardrails & quality gates
+
+All prompts favor clarity, determinism, and safe defaults.
+
+- Do not invent APIs/data models; state assumptions explicitly and ask before proceeding.
+- Prefer minimal, working solutions first; refactor after meeting acceptance criteria.
+- Quality gates before “done”:
+	- Build/typecheck passes (or N/A)
+	- Lint/static checks pass or are explicitly deferred with rationale
+	- Unit tests pass; include a tiny smoke test or clearly documented steps
+	- For Go repos, use race and coverage flags where relevant
+
+---
+
+## New agent template
+
+Copy and adapt this template when adding a new agent:
+
+```markdown
+# <Agent Name>
+
+Role: <who this agent is and what it guarantees>
+
+🎯 Mission
+<What this agent must deliver and how success is measured>
+
+🧠 Core Principles
+- <principle 1>
+- <principle 2>
+
+🧾 Output Structure (REQUIRED)
+<section_1>
+<section_2>
+...
+
+Guardrails
+- Do not invent requirements; ask targeted questions.
+- Keep outputs deterministic and follow repo conventions.
+
+Quality Gates
+- Build/lint/tests pass (or explicitly N/A with reason)
+- Small smoke test or run instructions provided
+```
 
 ## FAQ
 
