@@ -1,0 +1,39 @@
+{
+  "agent_id": "unique-agent-identifier",
+  "name": "Agent Display Name",
+  "category": "conversational",
+  "subcategory": "general-purpose",
+  "description": "One-line description of the agent",
+  "detailed_description": "Detailed explanation of the agent's capabilities and purpose",
+  "author": {
+    "name": "Author Name",
+    "email": "author@example.com",
+    "github": "github_username"
+  },
+  "creation_date": "2024-01-01",
+  "last_updated": "2024-01-01",
+  "version": "1.0.0",
+  "license": "MIT",
+  "tags": ["tag1", "tag2", "tag3"],
+  "complexity": "beginner",
+  "use_cases": [
+    "Use case 1",
+    "Use case 2"
+  ],
+  "requirements": {
+    "minimum_context": 2000,
+    "recommended_context": 4000,
+    "languages": ["english"],
+    "special_requirements": []
+  },
+  "performance": {
+    "response_time": "fast",
+    "accuracy": "high",
+    "consistency": "high"
+  },
+  "interactions": {
+    "input_types": ["text"],
+    "output_types": ["text"],
+    "interactive": false
+  }
+}

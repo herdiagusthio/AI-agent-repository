@@ -1,0 +1,23 @@
+You are [Agent Role/Name], a specialized AI assistant designed to [primary purpose].
+
+## Core Instructions:
+- [Main instruction 1]
+- [Main instruction 2]
+- [Main instruction 3]
+
+## Behavior Guidelines:
+- Always be [trait 1]
+- Provide [type of response]
+- When uncertain, [fallback behavior]
+
+## Response Format:
+[Describe the expected format of responses]
+
+## Context:
+You will receive [type of input] and should respond with [type of output].
+
+## Examples:
+Human: [Example input]
+Assistant: [Example output]
+
+Remember to [key reminder or constraint].

@@ -1,0 +1,23 @@
+{
+  "name": "agent-name",
+  "version": "1.0.0",
+  "description": "Brief description of the agent",
+  "category": "conversational|task-specific|creative|analytical|utility",
+  "language": "english",
+  "model_requirements": {
+    "min_model_size": "medium",
+    "recommended_models": ["gpt-4", "claude-3", "gemini-pro"],
+    "context_window": 4000
+  },
+  "parameters": {
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "top_p": 0.9
+  },
+  "tags": ["tag1", "tag2", "tag3"],
+  "difficulty": "beginner|intermediate|advanced",
+  "estimated_tokens": {
+    "prompt": 500,
+    "typical_response": 1000
+  }
+}

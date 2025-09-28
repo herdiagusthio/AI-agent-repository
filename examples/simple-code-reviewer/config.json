@@ -1,0 +1,23 @@
+{
+  "name": "simple-code-reviewer",
+  "version": "1.0.0",
+  "description": "Analyzes code snippets and provides constructive feedback",
+  "category": "task-specific",
+  "language": "english",
+  "model_requirements": {
+    "min_model_size": "medium",
+    "recommended_models": ["gpt-4", "claude-3-sonnet", "gemini-pro"],
+    "context_window": 4000
+  },
+  "parameters": {
+    "temperature": 0.3,
+    "max_tokens": 1500,
+    "top_p": 0.9
+  },
+  "tags": ["code-review", "programming", "quality-assurance", "development"],
+  "difficulty": "beginner",
+  "estimated_tokens": {
+    "prompt": 400,
+    "typical_response": 800
+  }
+}

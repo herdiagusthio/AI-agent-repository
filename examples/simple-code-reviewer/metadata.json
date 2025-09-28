@@ -1,0 +1,41 @@
+{
+  "agent_id": "simple-code-reviewer",
+  "name": "Simple Code Reviewer",
+  "category": "task-specific",
+  "subcategory": "code-analysis",
+  "description": "Analyzes code snippets and provides constructive feedback on quality and potential issues",
+  "detailed_description": "A focused code review agent that examines code for bugs, security vulnerabilities, performance issues, and style improvements. Provides actionable feedback in a structured format suitable for developers of all skill levels.",
+  "author": {
+    "name": "AI Agent Repository",
+    "email": "example@repository.com",
+    "github": "herdiagusthio"
+  },
+  "creation_date": "2024-01-01",
+  "last_updated": "2024-01-01",
+  "version": "1.0.0",
+  "license": "MIT",
+  "tags": ["code-review", "programming", "quality-assurance", "development", "debugging"],
+  "complexity": "beginner",
+  "use_cases": [
+    "Code review automation",
+    "Learning programming best practices",
+    "Identifying security vulnerabilities",
+    "Code quality assessment"
+  ],
+  "requirements": {
+    "minimum_context": 2000,
+    "recommended_context": 4000,
+    "languages": ["english"],
+    "special_requirements": ["Basic programming knowledge helpful"]
+  },
+  "performance": {
+    "response_time": "fast",
+    "accuracy": "high",
+    "consistency": "high"
+  },
+  "interactions": {
+    "input_types": ["code", "text"],
+    "output_types": ["structured-feedback"],
+    "interactive": false
+  }
+}
